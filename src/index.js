@@ -149,7 +149,7 @@ export default class Autolink extends PureComponent {
           case 'text':
             return [`sms:${number}`];
           default:
-            return [`tel:${number}`];
+            return [`tel:+${number}`];
         }
       }
       case 'url': {
